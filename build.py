@@ -1,17 +1,21 @@
 from pybtex.database.input import bibtex
 
 def get_personal_data():
-    name = ["Siyun Liang", "(梁锶韵)"]
+    name = ["Siyun", "Liang"]
+    twitter = "liang74661"
     email = "siyun.leung@gmail.com"
     github = "siyun-liang"
     linkedin = "siyun-liang"
     bio_text = f"""
                 <p>
-                    I am an M.Sc. student in Informatics at the <a href="https://www.tum.de/" target="_blank">Technical University of Munich (Munich, Germany)</a>, currently completing my master's thesis under the supervision of <a href="https://m-niemeyer.github.io/" target="_blank">Dr. Michael Niemeyer</a> and <a href="https://federicotombari.github.io/" target="_blank">PD. Dr. Federico Tombari</a>.
-                    Previously, I interned at the <a href="https://www.nii.ac.jp/" target="_blank">National Institute of Informatics (Tokyo, Japan)</a>, where I was supervised by <a href="https://honghuy127.github.io/" target="_blank">Dr. Huy H. Nguyen</a> and <a href="https://research.nii.ac.jp/~iechizen/official/members_echizen-e.html" target="_blank">Prof. Dr. Isao Echizen</a>.
+                    I am an M.Sc. student in Informatics at the <a href="https://www.tum.de/" target="_blank">Technical University of Munich</a> (Munich, Germany), currently completing my master's thesis under the supervision of <a href="https://m-niemeyer.github.io/" target="_blank">Dr. Michael Niemeyer</a> and <a href="https://federicotombari.github.io/" target="_blank">PD. Dr. Federico Tombari</a>.
+                    Previously, I interned at the <a href="https://www.nii.ac.jp/" target="_blank">National Institute of Informatics</a>(Tokyo, Japan), where I was supervised by <a href="https://honghuy127.github.io/" target="_blank">Dr. Huy H. Nguyen</a> and <a href="https://research.nii.ac.jp/~iechizen/official/members_echizen-e.html" target="_blank">Prof. Dr. Isao Echizen</a>.
+                </p>
+                <p>    
                     During my master studies, I also served as a teaching assistant for the <b>Game Physics</b> course, taught by <a href="https://ge.in.tum.de/about/n-thuerey/" target="_blank"> Prof. Dr. Nils Thuerey</a>, in the Winter Semesters of 2022 and 2023.
-                    
-                    Prior to this, I earned my Bachelor's degree in Software Engineering from <a href="https://www.seu.edu.cn/english/" target="_blank">Southeast University (Nanjing, China)</a>, where I completed my bachelor's thesis at <a href="https://www.sap.cn/index.html" target="_blank"> SAP Labs China</a>. 
+                </p>
+                <p>    
+                    Prior to this, I earned my Bachelor's degree in Software Engineering from <a href="https://www.seu.edu.cn/english/" target="_blank">Southeast University</a>(Nanjing, China), where I completed my bachelor's thesis at <a href="https://www.sap.cn/index.html" target="_blank"> SAP Labs China</a>. 
                 </p>
                 
                 <p> My research interests include <b>3D/4D reconstruction</b>, <b>3D understanding</b>, and <b>physics simulation</b>. Currently, I am focused on open-vocabulary 3D understanding, leveraging knowledge distillation from 2D foundation models. </p>
@@ -21,6 +25,7 @@ def get_personal_data():
                 <p>
                     <a href="https://siyun-liang.github.io/assets/pdf/CV_Siyun_Liang.pdf" target="_blank" style="margin-right: 5px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:siyun.leung@gmail.com" style="margin-right: 5px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
+                    <a href="https://twitter.com/liang74661" target="_blank" style="margin-right: 5px"><i class="fab fa-twitter fa-lg"></i> Twitter</a>
                     <a href="https://github.com/siyun-liang" target="_blank" style="margin-right: 5px"><i class="fab fa-github fa-lg"></i> Github</a>
                     <a href="https://www.linkedin.com/in/siyun-liang" target="_blank" style="margin-right: 5px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
                 </p>
@@ -37,9 +42,9 @@ def get_personal_data():
 
 def get_author_dict():
     return {
-        'Sen Wang': 'https://www.cs.cit.tum.de/en/camp/members/sen-wang/',
-        'Federico Tombari': 'https://www.cs.cit.tum.de/camp/members/senior-research-scientists/federico-tombari/',
-        'Kunyi Li': 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/visitenkarte.show_vcard?$ctx=design=ca2;header=max;lang=de&pPersonenGruppe=3&pPersonenId=6EC78DAA25310FF2',
+        'Sen Wang': 'https://scholar.google.com/citations?user=OxZ9S6oAAAAJ&hl=en&oi=ao',
+        'Federico Tombari': 'https://federicotombari.github.io/',
+        'Kunyi Li': 'https://li-kunyi.github.io/',
         'Michael Niemeyer': 'https://m-niemeyer.github.io/',
         'Stefano Gasperini': 'https://www.cs.cit.tum.de/camp/members/stefano-gasperini/',
         'Nassir Navab': 'https://www.professoren.tum.de/en/navab-nassir',
@@ -135,9 +140,9 @@ def get_talks_html():
     return s
 
 def get_index_html():
-    # pub = get_publications_html()
+    pub = get_publications_html()
     # talks = get_talks_html()
-    pub = ""
+    # pub = ""
     talks = ""
     name, bio_text, footer = get_personal_data()
     s = f"""
@@ -173,6 +178,13 @@ def get_index_html():
                     </div>
                     <div class="col-md-2" style="">
                         <img src="assets/img/profile.jpg" class="img-thumbnail" width="280px" alt="Profile picture">
+                    </div>
+                </div>
+                
+                <div class="row" style="margin-top: 1em;">
+                    <div class="col-sm-12" style="">
+                        <h4>Publications</h4>
+                        {pub}
                     </div>
                 </div>
 
