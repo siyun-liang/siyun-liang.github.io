@@ -8,19 +8,16 @@ def get_personal_data():
     linkedin = "siyun-liang"
     bio_text = f"""
                 <p>
-                    I am an M.Sc. student in Informatics at the <a href="https://www.tum.de/" target="_blank">Technical University of Munich</a> (Munich, Germany), currently completing my master's thesis under the supervision of <a href="https://m-niemeyer.github.io/" target="_blank">Dr. Michael Niemeyer</a> and <a href="https://federicotombari.github.io/" target="_blank">PD. Dr. Federico Tombari</a>.
-                    Previously, I interned at the <a href="https://www.nii.ac.jp/" target="_blank">National Institute of Informatics</a>(Tokyo, Japan), where I was supervised by <a href="https://honghuy127.github.io/" target="_blank">Dr. Huy H. Nguyen</a> and <a href="https://research.nii.ac.jp/~iechizen/official/members_echizen-e.html" target="_blank">Prof. Dr. Isao Echizen</a>.
+                    I am a PhD student in the <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/computer-graphics/" target="_blank">Computer Graphics research group</a> at the University of Tübingen and the Max Planck Institute for Intelligent Systems, supervised by <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/prof-dr-ing-hendrik-lensch/" target="_blank">Prof Dr. Ing. Hendrik Lensch</a>.
                 </p>
                 <p>    
-                    During my master studies, I also served as a teaching assistant for the <b>Game Physics</b> course, taught by <a href="https://ge.in.tum.de/about/n-thuerey/" target="_blank"> Prof. Dr. Nils Thuerey</a>, in the Winter Semesters of 2022 and 2023.
+                    Prior to my PhD study, I completed my Master's degree in Informatics at the Technical University of Munich, where I conducted my thesis research under the supervision of <a href="https://m-niemeyer.github.io/" target="_blank">Dr. Michael Niemeyer</a> and <a href="https://federicotombari.github.io/" target="_blank">PD Dr. Ing. Habil. Federico Tombari</a>. I hold a Bachelor's degree in Software Engineering from Southeast University, where I completed my undergraduate thesis at SAP Labs China.
                 </p>
                 <p>    
-                    Prior to this, I earned my Bachelor's degree in Software Engineering from <a href="https://www.seu.edu.cn/english/" target="_blank">Southeast University</a>(Nanjing, China), where I completed my bachelor's thesis at <a href="https://www.sap.cn/index.html" target="_blank"> SAP Labs China</a>. 
+                    Previously, I interned at the National Institute of Informatics, where I was supervised by <a href="https://honghuy127.github.io/" target="_blank">Dr. Huy H. Nguyen</a> and <a href="https://research.nii.ac.jp/~iechizen/official/members_echizen-e.html" target="_blank">Prof. Dr. Isao Echizen</a>.
                 </p>
                 
-                <p> My research interests include <b>3D/4D reconstruction</b>, <b>3D understanding</b>, and <b>physics simulation</b>. Currently, I am focused on open-vocabulary 3D understanding, leveraging knowledge distillation from 2D foundation models. </p>
-                
-                <p> <b>I am actively seeking Ph.D. opportunities for the Spring or Fall 2025 intake.</b> </p>
+                <p> My research interests include 3D/4D reconstruction and understanding. Currently, I focus on <b>open-vocabulary 3D understanding</b>. </p>
                 
                 <p>
                     <a href="https://siyun-liang.github.io/assets/pdf/CV_Siyun_Liang.pdf" target="_blank" style="margin-right: 5px"><i class="fa fa-address-card fa-lg"></i> CV</a>
