@@ -3,21 +3,21 @@ from pybtex.database.input import bibtex
 def get_personal_data():
     name = ["Siyun", "Liang"]
     twitter = "liang74661"
-    email = "siyun.leung@gmail.com"
+    email = "siyun.liang@uni-tuebingen.de"
     github = "siyun-liang"
     linkedin = "siyun-liang"
     bio_text = f"""
                 <p>
-                    I am a PhD student in the <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/computer-graphics/" target="_blank">Computer Graphics research group</a> at the University of Tübingen and the Max Planck Institute for Intelligent Systems, supervised by <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/prof-dr-ing-hendrik-lensch/" target="_blank">Prof Dr. Ing. Hendrik Lensch</a>.
+                    I am a PhD student in the <a href="https://graphics.cs.uni-tuebingen.de/" target="_blank">Computer Graphics</a> research group at the University of Tübingen and the Max Planck Institute for Intelligent Systems, supervised by <a href="https://graphics.cs.uni-tuebingen.de/team/person?name=Hendrik%20Lensch" target="_blank">Prof. Dr. Hendrik Lensch</a>.
                 </p>
                 <p>    
-                    Prior to my PhD study, I completed my Master's degree in Informatics at the Technical University of Munich, where I conducted my thesis research under the supervision of <a href="https://m-niemeyer.github.io/" target="_blank">Dr. Michael Niemeyer</a> and <a href="https://federicotombari.github.io/" target="_blank">PD Dr. Ing. Habil. Federico Tombari</a>. I hold a Bachelor's degree in Software Engineering from Southeast University, where I completed my undergraduate thesis at SAP Labs China.
+                    Prior to my PhD study, I completed my Master's degree in Informatics at the Technical University of Munich, where my thesis was supervised by <a href="https://m-niemeyer.github.io/" target="_blank">Dr. Michael Niemeyer</a> and <a href="https://federicotombari.github.io/" target="_blank">PD Dr. Federico Tombari</a>. I hold a Bachelor's degree in Software Engineering from Southeast University, where I completed my undergraduate thesis at SAP Labs China.
                 </p>
                 <p>    
-                    Previously, I interned at the National Institute of Informatics, where I was supervised by <a href="https://honghuy127.github.io/" target="_blank">Dr. Huy H. Nguyen</a> and <a href="https://research.nii.ac.jp/~iechizen/official/members_echizen-e.html" target="_blank">Prof. Dr. Isao Echizen</a>.
+                    Previously, I interned at the National Institute of Informatics, supervised by <a href="https://honghuy127.github.io/" target="_blank">Dr. Huy H. Nguyen</a> and <a href="https://research.nii.ac.jp/~iechizen/official/members_echizen-e.html" target="_blank">Prof. Dr. Isao Echizen</a>.
                 </p>
                 
-                <p> My research interests include 3D/4D reconstruction and understanding. Currently, I focus on <b>open-vocabulary 3D understanding</b>. </p>
+                <p> My research interests include 3D/4D reconstruction and understanding, with a current focus on open-vocabulary understanding. </p>
                 
                 <p>
                     <a href="https://siyun-liang.github.io/assets/pdf/CV_Siyun_Liang.pdf" target="_blank" style="margin-right: 5px"><i class="fa fa-address-card fa-lg"></i> CV</a>
@@ -46,6 +46,8 @@ def get_author_dict():
         'Michael Niemeyer': 'https://m-niemeyer.github.io/',
         'Stefano Gasperini': 'https://www.cs.cit.tum.de/camp/members/stefano-gasperini/',
         'Nassir Navab': 'https://www.professoren.tum.de/en/navab-nassir',
+        'Elena Alegret': 'https://scholar.google.com/citations?user=RQzP41AAAAAJ&hl=en',
+        'Hendrik Lensch': 'https://graphics.cs.uni-tuebingen.de/team/person?name=Hendrik%20Lensch',
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Siyun Liang', add_links=True):
